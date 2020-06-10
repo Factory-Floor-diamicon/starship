@@ -1,0 +1,45 @@
+body {
+    /*background-image:*/
+    /*linear-gradient(*/
+    /*        rgba(0, 0, 0, 0.5),*/
+    /*        rgba(0, 0, 0, 0.5)*/
+    /*),url("img/metal-panels.jpeg");*/
+    /*background-image: url();*/
+    background-size: cover;
+}
+
+/*
+.red {
+background-image:
+linear-gradient(
+  rgba(255, 0, 0, 0.5),
+  rgba(255, 0, 0, 0.5)
+),
+url("img/metal-panels.jpeg");
+*/
+
+h3 {
+    justify-items: center;
+}
+
+.circuit {
+    display: grid;
+    justify-items: center;
+
+}
+
+#circuitBoard {
+    display: inline-grid;
+    border: 3px solid black;
+    border-radius: 15px;
+    /*width: 400px;*/
+    align-items: center;
+}
+header {
+    text-align: center;
+    width: 100vw;
+}
+
+.com-button {
+
+}
