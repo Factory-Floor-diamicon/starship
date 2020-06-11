@@ -4,19 +4,10 @@ body {
     /*        rgba(0, 0, 0, 0.5),*/
     /*        rgba(0, 0, 0, 0.5)*/
     /*),url("img/metal-panels.jpeg");*/
-    background-image: url("../img/metal-panels.jpeg");
+    /*background-image: url("../img/metal-panels.jpeg");*/
     background-size: cover;
 }
 
-/*
-.red {
-background-image:
-linear-gradient(
-  rgba(255, 0, 0, 0.5),
-  rgba(255, 0, 0, 0.5)
-),
-url("img/metal-panels.jpeg");
-*/
 
 h3 {
     justify-items: center;
@@ -43,3 +34,24 @@ header {
 .com-button {
 
 }
+
+/*
+https://css-tricks.com/snippets/css/typewriter-effect/
+https://css-tricks.com/snippets/css/css-grid-starter-layouts/
+https://css-tricks.com/snippets/css/complete-guide-grid/
+https://css-tricks.com/snippets/css/basics-of-google-font-api/
+https://css-tricks.com/snippets/css/custom-checkboxes-and-radio-buttons/
+
+
+
+*/
+
+/*
+.red {
+background-image:
+linear-gradient(
+  rgba(255, 0, 0, 0.5),
+  rgba(255, 0, 0, 0.5)
+),
+url("img/metal-panels.jpeg");
+*/
