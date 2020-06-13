@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/project-starship.css">
 </head>
-<body>
+<body class="container">
 
-<header>
+<header class="panelBack">
     <h1>Project Starship</h1>
 </header>
 
-<div id="circuitBoard">
+<div id="circuitBoard" class="panelBack">
     <h3>CIRCUITS</h3>
     <div id="mainPowerCircuit" class="circuit">
         ][
@@ -26,24 +26,53 @@
     </div>
 </div>
 
-<main id="mainScreen">
+<main id="mainScreen" class="panelBack">
     <h4>main screen</h4>
 </main>
 
-<div id="manual">
+<div id="manual" class="panelBack">
     <h3>MANUAL</h3>
     <h4>Secret Coordinates Input:
         <br>
         upupdndn</h4>
 </div>
 
-<div id="controlPanel1">
+
+
+
+<div id="controlPanel1" class="panelBack">
     <h4>controlPanel1</h4>
-    <div id="powerSequence">
-        Initiate Engine Power Sequence
+    <div >
+<!--        Initiate Engine Power Sequence-->
+<!--        BIG BUTTON-->
+<!--        <div class="mid">-->
+
+<!--            <label class="rocker">-->
+<!--                <input type="checkbox" checked>-->
+<!--                <span class="switch-left">On</span>-->
+<!--                <span class="switch-right">Off</span>-->
+<!--            </label>-->
+
+<!--        </div>-->
+        <div class="mid" id="powerSequence">
+
+            <label class="rocker rocker-small">
+                <input type="checkbox">
+                <span class="switch-left">Yes</span>
+                <span class="switch-right">No</span>
+            </label>
+        </div>
     </div>
     <div id="lifeSupport">
-        Initiate Life Support
+<!--        Initiate Life Support-->
+        <div class="mid">
+
+            <label class="rocker rocker-small">
+                <input type="checkbox">
+                <span class="switch-left">Yes</span>
+                <span class="switch-right">No</span>
+            </label>
+        </div>
     </div>
     <div id="navigation">
         Navigation:
@@ -56,16 +85,24 @@
     </div>
 </div>
 
-<div id="controlPanel2">
+
+
+
+
+<div id="controlPanel2" class="panelBack">
     <h4>controlPanel2</h4>
     <button type="button" class="com-button btn btn-primary">
         Communications Power
     </button>
 </div>
 
-<footer id="consolePanel">
 
-</footer>
+
+
+
+<!--<footer id="consolePanel" class="panelBack">-->
+
+<!--</footer>-->
 
 
 
@@ -97,7 +134,7 @@
             $('#lifeSupportCircuit').css('background-color','green')
         });
 
-        $('#circuitBoard').css('width','160px');
+        $('#circuitBoard');
 
         $('#powerSequence').click(function () {
             $('#mainPowerCircuit').css({
