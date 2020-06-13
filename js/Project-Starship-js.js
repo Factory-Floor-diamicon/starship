@@ -51,7 +51,13 @@ var initiateLockUnlock = ['keypress1','keypress2'];
 
 $('.com-button').click(function() {
     // $('h1').html(`<div class="area"><div class="mover"></div></div>`);
-    $('#comPowerCircuit').css('background-color','green');
+    $('#comPowerCircuit').css({
+        'transition-duration': '2s',
+        'transition-timing-function': 'ease-in-out',
+        'transition-delay': '1s',
+        'background-color': 'darkblue',
+        'color': 'lightblue'
+    });
 });
 
 // FUTURE CONDITIONAL VARIABLES

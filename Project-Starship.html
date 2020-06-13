@@ -16,13 +16,13 @@
 <div id="circuitBoard" class="panelBack">
     <h3>CIRCUITS</h3>
     <div id="mainPowerCircuit" class="circuit">
-        ][
+        ]main pwr[
     </div>
     <div id="comPowerCircuit" class="circuit">
-        ][
+        ]comms[
     </div>
     <div id="lifeSupportCircuit" class="circuit">
-        ][
+        ]life spt[
     </div>
 </div>
 
@@ -131,7 +131,13 @@
 
 
         $('#lifeSupport').click(function () {
-            $('#lifeSupportCircuit').css('background-color','green')
+            $('#lifeSupportCircuit').css({
+                'transition-duration': '2s',
+                'transition-timing-function': 'ease-in-out',
+                'transition-delay': '2s',
+                'background-color': 'lightgreen',
+                'color': 'blue'
+            });
         });
 
         $('#circuitBoard');
@@ -140,7 +146,7 @@
             $('#mainPowerCircuit').css({
                 'transition-duration': '2s',
                 'transition-timing-function': 'ease-in-out',
-                'transition-delay': '2s',
+                'transition-delay': '1s',
                 'background-color': 'blue',
                 'color': 'red'
             });
