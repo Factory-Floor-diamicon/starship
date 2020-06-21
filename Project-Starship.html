@@ -54,6 +54,9 @@
 <!--            </label>-->
 
 <!--        </div>-->
+        <button type="button" class="com-button btn btn-primary">
+            Communications Power
+        </button>
         <div class="mid" id="powerSequence">
 
             <label class="rocker rocker-small">
@@ -91,9 +94,40 @@
 
 <div id="controlPanel2" class="panelBack">
     <h4>controlPanel2</h4>
-    <button type="button" class="com-button btn btn-primary">
-        Communications Power
-    </button>
+
+    <label for="indicator-check" class="label">
+        <div class="toggle-container">
+            <div class="toggle-container-inner">
+                <div class="toggle-container-inner-ticks">
+                    <div class="toggle-container-inner-ticks-cover"></div>
+                    <div class="toggle-container-inner-ticks-container">
+                        <div class="tick big e">E</div>
+                        <div class="tick"></div>
+                        <div class="tick"></div>
+                        <div class="tick"></div>
+                        <div class="tick"></div>
+                        <div class="tick big m">
+                            <small>1</small>/<small>2</small>
+                        </div>
+                        <div class="tick"></div>
+                        <div class="tick"></div>
+                        <div class="tick"></div>
+                        <div class="tick"></div>
+                        <div class="tick big f">F</div>
+                    </div>
+
+                    <input type="checkbox" id="indicator-check">
+                    <div class="toggle-container-inner-ticks-indicator"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text">
+            <h5>Pure CSS Fuel Gauge Toggle</h5>
+            <p>click on the gauge to toggle the indicator</p>
+        </div>
+    </label>
+
 </div>
 
 
