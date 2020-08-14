@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700&display=swap');
 
+/*todo CSS Citations at the bottom - plan to attach citations to its use in the body on future commit*/
+
 * {
     padding: 0px;
     margin: 0px;
@@ -29,11 +31,11 @@ body {
 #indicator-check {
     display: none;
 
-    &: checked+div;
-    margin-left: 100px;
+    /*&: checked+div;*/
+    /*margin-left: 100px;*/
 
-    &:hover;
-    & .toggle-container;
+    /*&:hover;*/
+    /*& .toggle-container;*/
     box-shadow: 0px 0px 15px -3px rgba(200, 200, 200, 0.6), inset 0px 0px 18px 5px rgba(0, 0, 0, 0.75)
 }
 
@@ -41,7 +43,9 @@ body {
     text-align: center;
     margin-top: 10px;
     color: #7d7d7d;
-    p:
+}
+
+p {
     font-size: 14px;
 }
 
@@ -55,7 +59,7 @@ body {
     justify-content: center;
 
 
-&-inner:
+/*&-inner:*/
      box-shadow: inset 0px 0px 70px 15px rgba(0, 0, 0, 0.5);
      background-color: #101010;
      width: 240px;
@@ -65,7 +69,7 @@ body {
      justify-content: center;
      flex-wrap: wrap;
 
-    &-ticks:
+    /*&-ticks:*/
     box-shadow: inset 0px 0px 20px 10px rgba(0, 0, 0, 0.75), inset 0px 25px 26px -26px rgba(236, 236, 236, 0.5);
     background-color: #080808;
     display: flex;
@@ -363,153 +367,144 @@ input:checked:focus + .switch-left + .switch-right {
     border-radius: 50%;
     top: 50%;
     left: 50%;
-    transition: $ts-speed;
+    /*transition: $ts-speed;*/
     transform: translate(-50%, -50%);
     box-shadow:
     inset 0 0 0 4px #635a84
 }
 
-&:after
- content ""
+/*&:after*/
+/* content ""*/
+/*    display: block;*/
+/*    height: 14px;*/
+/*    width: 14px;*/
+/*                 background-color #7b7394*/
+/*                 border-radius 50%*/
+/*position absolute*/
+/*transition $ts-speed*/
+/*top 50%*/
+/*left 50%*/
+/*transform translate(-50%, -50%)*/
+/*box-shadow 0 0 2px 4px #524a73*/
+
+
+
+.filament-1, .filament-2 {
+    position: absolute;
     display: block;
-    height: 14px;
-    width: 14px;
-                 background-color #7b7394
-                 border-radius 50%
-position absolute
-transition $ts-speed
-top 50%
-left 50%
-transform translate(-50%, -50%)
-box-shadow 0 0 2px 4px #524a73
-                    .filament-1, .filament-2
-position absolute
-display block
-height 35px
-         width 35px
-                 border-radius 50%
-top 50%
-left 50%
-overflow hidden
-transform translate(-50%, -50%) rotate(-45deg)
-&:after, &:before
-          content ""
-display block
-height 6px
-        width 17px
-                border-radius 50%
-border 2px solid #4a426b
-        position absolute
-        transition $ts-speed
-        top -4px
-              left -2px
-                     transform rotate(-10deg)
-&:before
- left 15px
-        transform rotate(10deg)
-.filament-2
-transform translate(-50%, -50%) rotate(45deg) !important
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    /*transform translate(-50%, -50%) rotate(-45deg)*/
+}
 
-.reflections
-height 100%
-width 100%
-display block
-border-radius 50%
-overflow hidden
-position absolute
-z-index 90
-perspective 70px
-              span
-              height 80px
-                       width 80px
-                               border-radius 50%
-background-image linear-gradient(-135deg, transparent 10%, rgba(#fff,.3))
-position absolute
-left -40px
-        bottom -45px
-    &:after
-                  content ""
-display block
-height 35px
-         width 20px
-                 position absolute
-                 top -36px
-                        right -40px
-                                 border-radius 50%
-box-shadow 4px -2px 0 -3px rgba(#fff,.4)
-filter blur(1px)
-transform rotate(-10deg)
-&:after
- content ""
-display block
-height 80px
-         width 50px
-                 background-image linear-gradient(80deg, rgba(#fff,.05) 45%, rgba(#fff,.5))
-border-radius 10% 20% 50% 30% / 30% 60% 30% 40%
-position absolute
-transform-style: preserve-3d;
-transform: rotateX(-25deg)  rotate(-35deg) skewx(-15deg) translate(10px, -20px)
-top -8px
-      left -5px
-  &:before
-             content ""
-display block
-position absolute
-height 10px
-         width 30px
-                 background-image linear-gradient(to right, transparent, rgba(#fff,.15))
-bottom 10px
-         right 0px
-                transform rotate(45deg)
 
-.sparks
-.spark1
-display block
-height 1px
-        width 1px
-               background-color #d1b82b
-               position absolute
-               right -5px
-                       border-radius 50%
-bottom 23px
-         transition .4s
-                      opacity 0
-.spark2
-display block
-height 3px
-        width 3px
-               background-color #d1b82b
-               position absolute
-               right 20px
-                       border-radius 50%
-bottom 80px
-         transition .4s
-                      opacity 0
-.spark3
-display block
-height 3px
-        width 3px
-               background-color #d1b82b
-               position absolute
-               left 20px
-                      border-radius 50%
-bottom 80px
-         transition .4s
-                      opacity 0
-.spark4
-display block
-height 3px
-        width 3px
-               background-color #d1b82b
-               position absolute
-               left 20px
-                      border-radius 50%
-bottom 20px
-         transition .4s
-                      opacity 0
+/*&:after, &:before*/
+/*          content ""*/
+/*    display block*/
+/*    height 6px*/
+/*    width 17px*/
+/*    border-radius 50%*/
+/*    border 2px solid #4a426b*/
+/*    position absolute*/
+/*    transition $ts-speed*/
+/*    top -4px*/
+/*    left -2px */
+/*    transform rotate(-10deg)*/
+/*&:before*/
+/*    left 15px*/
+/*    transform rotate(10deg)*/
+
+
+.filament-2 {
+    transform: translate(-50%, -50%) rotate(45deg) !important
+}
+
+.reflections {
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    z-index: 90;
+    perspective: 70px
+}
+
+span {
+
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-image: linear-gradient(-135deg, transparent 10%, rgba(#fff, .3));
+    position: absolute;
+    left: -40px;
+    bottom: -45px;
+}
+
+
+/*    &:after*/
+/*                  content ""*/
+/*display block*/
+/*height 35px*/
+/*         width 20px*/
+/*                 position absolute*/
+/*                 top -36px*/
+/*                        right -40px*/
+/*                                 border-radius 50%*/
+/*box-shadow 4px -2px 0 -3px rgba(#fff,.4)*/
+
+
+filter {
+    blur(1 px) transform rotate(- 10 deg)
+    /*&: after content "" */
+    display block
+    height 80 px
+    width 50 px
+    background-image
+    linear-gradient(80 deg, rgba(#fff, .05) 45 %, rgba(#fff, .5))
+    border-radius 10 % 20 % 50 % 30 % / 30 % 60 % 30 % 40 %
+    position absolute
+    transform-style: preserve-3d;
+        transform: rotateX(-25deg)
+                    rotate(-35deg)
+                    skewx(-15deg)
+                    /*translate(10px, -20px) top -8px left -5px*/
+    }
+
+
+/*  &:before*/
+/*             content ""*/
+/*display block*/
+/*position absolute*/
+/*height 10px*/
+/*         width 30px*/
+/*                 background-image linear-gradient(to right, transparent, rgba(#fff,.15))*/
+/*bottom 10px*/
+/*         right 0px*/
+/*                transform rotate(45deg)*/
 
 
 
+.sparks, .spark1 {
+    display block height 1px width 1px background-color #d1b82b position absolute right -5px border-radius 50% bottom 23px transition .4s opacity 0
+}
+
+.spark2 {
+    display block height 3px width 3px background-color #d1b82b position absolute right 20px border-radius 50% bottom 80px transition .4s opacity 0
+}
+.spark3 {
+    display block height 3px width 3px background-color #d1b82b position absolute left 20px border-radius 50% bottom 80px transition .4s opacity 0
+}
+.spark4 {
+    display block height 3px width 3px background-color #d1b82b position absolute left 20px border-radius 50% bottom 20px transition .4s opacity 0
+}
+
+
+/*switches*/
 
 .switch input:checked ~ label .bulb
 left 120px
