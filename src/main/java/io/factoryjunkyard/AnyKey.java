@@ -1,5 +1,6 @@
 package io.factoryjunkyard;
-import io.factoryjunkyard.util.Input;
+//import io.factoryjunkyard.util.Input;
+import io.factoryjunkyard.util.*;
 
 public class AnyKey {
 
