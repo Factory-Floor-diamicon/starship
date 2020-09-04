@@ -1,4 +1,4 @@
-package util;
+package io.factoryjunkyard.util;
 import java.util.Scanner;
 //creating a package of general purpose tools
 //an input class could be first of several things created along the way

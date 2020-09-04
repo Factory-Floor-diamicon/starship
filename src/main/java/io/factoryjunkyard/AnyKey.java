@@ -1,7 +1,5 @@
-import util.Input;
-
-import javax.imageio.IIOException;
-import java.io.IOException;
+package io.factoryjunkyard;
+import io.factoryjunkyard.util.Input;
 
 public class AnyKey {
 

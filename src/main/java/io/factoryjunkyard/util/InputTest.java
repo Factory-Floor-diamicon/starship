@@ -1,4 +1,4 @@
-package util;
+package io.factoryjunkyard.util;
 
 public class InputTest {
 
