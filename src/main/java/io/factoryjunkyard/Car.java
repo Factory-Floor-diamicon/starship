@@ -1,4 +1,10 @@
-public class Car extends Vehicle{
+package io.factoryjunkyard;
+
+public class Car
+
+        extends Vehicle
+
+{
 
     //instead of strs, use super method like Jay for practice
 
@@ -13,18 +19,18 @@ public class Car extends Vehicle{
 
     }
 
-    @Override
+//    @Override
     public void turnOn() {
         System.out.println("Cranking engine...");
     }
 
     public void genericTurnOn(){
         //System.out.println("Vehicle is turning on...");
-        super.turnOn();//this is the parent reference
+//        super.turnOn();//this is the parent reference
     }
 
     public Car(boolean isOperable, int passengerCapacity, String powerSource, int milesPerGallon) {
-        super(isOperable, passengerCapacity, powerSource);
+//        super(isOperable, passengerCapacity, powerSource);
         this.milesPerGallon = milesPerGallon;
     }
 
@@ -43,7 +49,7 @@ public class Car extends Vehicle{
         this.milesPerGallon = milesPerGallon;
     }
 
-    @Override
+//    @Override
     public String toString() {
         return "Car{" +
                 "milesPerGallon=" + milesPerGallon +

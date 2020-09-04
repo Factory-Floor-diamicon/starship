@@ -1,3 +1,5 @@
+package io.factoryjunkyard;
+
 public class Vehicle {
 
     private boolean isOperable;
