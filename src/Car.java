@@ -3,6 +3,7 @@ public class Car extends Vehicle{
     //instead of strs, use super method like Jay for practice
 
     private int milesPerGallon;
+    private String drive;
 
     public void depoyAirBag(){
         System.out.println("Deploying airbag...");
