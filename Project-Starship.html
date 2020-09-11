@@ -31,10 +31,30 @@
 </main>
 
 <div id="manual" class="panelBack">
-    <h3>MANUAL</h3>
-    <h4>Secret Coordinates Input:
-        <br>
-        upupdndn</h4>
+<!--    <h3>MANUAL</h3>-->
+    <button type="button" class="bulb" data-toggle="modal" data-target="#modalManual" id="manualButton">MANUAL</button>
+    <div class="modal fade" id="modalManual" tabindex="-1" role="dialog" aria-labelledby="manualTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="manualTitle">
+                        MANUAL
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Secret Coordinates Input:
+                        <br>
+                        upupdndn</h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
 </div>
 
 
@@ -174,6 +194,10 @@
         //     'width': '100vw',
         //     'text-align': 'center'
         // });
+
+        $('#modalManual').on('shown.bs.modal', function () {
+            $('#manualButton').trigger('focus')
+        })
 
         // TODO Add images to the manual
         $('.manual').hover(function () {
